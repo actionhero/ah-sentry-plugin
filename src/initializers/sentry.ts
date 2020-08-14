@@ -15,6 +15,8 @@ export class MyInitializer extends Initializer {
     if (config.sentry.dsn) {
       Sentry.init({
         dsn: config.sentry.dsn,
+        tracesSampleRate: config.sentry.tracesSampleRate,
+        environment: env,
         release:
           process.env.npm_package_name + "@" + process.env.npm_package_version,
         integrations: [new ApmIntegrations.Tracing()],
