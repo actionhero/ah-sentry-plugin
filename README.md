@@ -2,6 +2,8 @@
 
 A Plugin to report your Actionhero errors to Sentry.io
 
+![Sentry Screenshot]()https://raw.githubusercontent.com/actionhero/ah-sentry-plugin/master/image.png
+
 ## Setup
 
 1. Install this plugin: `npm install ah-sentry-plugin --save`
