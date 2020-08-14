@@ -11,17 +11,16 @@
     "@sentry/node": "^5.21.1"
   },
   "devDependencies": {
-    "actionhero": "23.0.6",
-    "ws": "latest",
-    "ioredis": "latest",
-    "winston": "latest",
-    "@types/node": "latest",
     "@types/jest": "latest",
+    "@types/node": "latest",
+    "ioredis": "latest",
     "jest": "latest",
     "prettier": "latest",
     "ts-jest": "latest",
     "ts-node-dev": "latest",
-    "typescript": "latest"
+    "typescript": "latest",
+    "winston": "latest",
+    "ws": "latest"
   },
   "scripts": {
     "postinstall": "npm run build",
