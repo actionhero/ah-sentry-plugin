@@ -25,13 +25,14 @@ export const DEFAULT = {
 
 ### Configuration
 
-A `./src/config/sentry.ts` will need to be created for your project. This will source the `SENTRY_DSN` environment variable into `config.sentry.dsn`.
+A `./src/config/sentry.ts` will need to be created for your project. This will source the `SENTRY_DSN` environment variable into `config.sentry.dsn`. If you want to record APM transactions, also set `SENTRY_SAMPLE_RATE`
 
 ```ts
 export const DEFAULT = {
   sentry: (config) => {
     return {
       dsn: process.env.SENTRY_DSN,
+      tracesSampleRate: parseFloat(process.env.SENTRY_SAMPLE_RATE),
     };
   },
 };
